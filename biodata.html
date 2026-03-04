@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Zarrin Nadhira Sigit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fcfcfc; /* Peach background */
+            color: #045b66; /* Dark brown text */
+            font-family: 'Bangers', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            font-size: 0.9em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #050f11;
+            font-weight: bold;
+        }
+
+        /* Header Section */
+        header {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        /* Profile Image */
+        .profile-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .profile-img {
+            width: 180px; 
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Divider */
+        .divider {
+            width: 70%;
+            border-top: 2px dotted #050f11;
+            margin: 20px 0;
+        }
+
+        /* Main Content - Now centered in a column */
+        .content {
+            width: 90%;
+            display: flex;
+            flex-direction: column; /* Stacked vertically */
+            align-items: center;    /* Centered horizontally */
+            text-align: center;
+            gap: 20px;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .details-text {
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto; /* Pushes footer to bottom if page is short */
+            padding: 25px;
+            font-family: 'Courier Prime', monospace;
+            font-style: italic;
+            background-color: #fffaf0;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <header>
+        <h1>Handsomesquidward</h1>
+    </header>
+
+    <div class="profile-container">
+        <img src="profilepicture.png" alt="Profile Character" class="profile-img">
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <div class="section-title">• Data Diri •</div>
+        
+        <div class="details-text">
+            Nama : Ser Squidward Handsomuse<br>
+            Asal : BIKINI BUTTOM<br>
+            Tanggal Lahir : 11 September 2001<br>
+            No. Telp : PMS 333
+        </div>
+
+        <div class="section-title">• quote •</div>
+        <div class="details-text">"when a mosquito bites on your testicles, you learn that violence isn't always the answer."</div>
+
+    </div>
+
+    <footer>
+        &copy; crusty. All rights reserved.
+    </footer>
+
+    <audio id="bg-music" src="Fetty Wap - Again [Audio Only].mp3"loop></audio>
+    <script>
+        // Play background music when the page loads
+        window.onload = function() {
+            var bgMusic = document.getElementById('bg-music');
+            bgMusic.play();
+        };
+    </script>
+
+</body>
+</html>
